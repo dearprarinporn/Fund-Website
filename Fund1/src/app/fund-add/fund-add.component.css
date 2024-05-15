@@ -1,0 +1,80 @@
+
+h2 {
+    text-align: center;
+    margin-top: 1;
+    font-size: 24px;
+  }
+  
+  /* สำหรับแต่ละส่วนของรายละเอียด */
+  div {
+    margin-bottom: 15px; /* ช่องว่างระหว่างส่วน */
+  }
+  
+  /* รายละเอียดของแต่ละ label */
+  label {
+    font-weight: normal;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block; /* ทำให้ input box เรียงตัวตรงกัน */
+    vertical-align: middle; /* จัดให้เนื้อหาอยู่ตรงกลางตามแนวตั้ง */
+    box-sizing: border-box; /* กำหนดให้ขนาดของ input เป็นขนาดที่ถูกต้องแม้ว่าจะมีการเพิ่ม padding และ border */
+    margin-bottom: 5px; /* ช่องว่างด้านล่างของ input box */
+  }
+  
+  
+  
+  /* ขอบกรอบของ input เมื่อได้รับการคลิก */
+  input:focus, select:focus {
+    border-color: #007bff;
+  }
+  
+  
+  
+  
+  .container div {
+    margin-bottom: 10px; /* เพิ่มขีดเส้นระหว่าง div ใน container */
+  }
+  
+  .container label {
+    display: inline-block; /* ทำให้ label อยู่ในบรรทัดเดียวกับ input */
+    width: 120px; /* กำหนดความกว้างของ label */
+  }
+  .datetime-container {
+    display: flex; /* ให้แสดงเนื้อหาภายใน div เป็น Flexbox */
+  }
+  
+  .datetime-label {
+    margin-right: 10px; /* ระยะห่างของข้อความ "Create Date Time" กับค่าที่ได้ */
+  }
+  
+  .datetime-value {
+    color: rgb(0, 0, 0); /* เปลี่ยนสีข้อความค่าที่ได้จากฟังก์ชัน getCurrentDateTime() เป็นสีน้ำเงิน */
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  
+  
+  .container {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  

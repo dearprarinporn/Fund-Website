@@ -1,0 +1,9 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <a routerLink="/dashboard">{{ 'Fund' | translate }}</a>
+  </div>
+  <div>
+    <dx-button id="app.navbar.button.translate.en" style="margin-right: 10px;" type="default"  stylingMode="contained" (click)="switchLanguage('en')">English</dx-button>
+    <dx-button id="app.navbar.button.translate.th" style="margin-right: 10px;" type="default"  stylingMode="contained" (click)="switchLanguage('th')">ไทย</dx-button>
+  </div>
+</nav>

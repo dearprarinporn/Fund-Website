@@ -1,0 +1,76 @@
+.dx-datagrid {
+    border: 1px solid #a21111; 
+  }
+  
+  .dx-datagrid-rowsview .dx-row {
+    margin-bottom: 10px; 
+  }
+  
+  #app-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  #gridContainer {
+    width: 100%; 
+  }
+  
+  ::ng-deep #data-grid-demo {
+    min-height: 700px;
+  }
+  
+  ::ng-deep #gridDeleteSelected {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin: 1px;
+    top: 0;
+  }
+  
+  ::ng-deep #gridDeleteSelected .dx-button-text {
+    line-height: 0;
+  }
+  
+  .dx-checkbox-icon.dx-state-checked.dx-selection-checkbox::after {
+    background-color: rgb(0, 85, 255); 
+  }
+  
+  .dx-checkbox-icon.dx-state-hover.dx-selection-checkbox::after {
+    background-color: lightblue; 
+  }
+  
+  .dx-checkbox-icon.dx-state-checked.dx-selection-checkbox::after {
+    background-color: rgb(0, 0, 0); 
+  }
+  
+  .dx-selectbox {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .clear-search-button {
+    position: absolute; 
+    right: 26px;
+    top: 1.5px; 
+  }
+  
+  .dx-dropdowneditor-icon {
+    right: 10px;
+  }
+  
+  .dx-selectbox.dx-state-focused {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 350px;
+    margin-right: 10px; 
+  }
+  
