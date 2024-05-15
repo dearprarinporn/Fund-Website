@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-15T09:26:53.999394" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Browser" source="C:\Users\Prarinporn.choo\robot\test_browser.robot">
+<test id="s1-t1" name="Open Localhost Website" line="10">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-15T09:26:54.763876" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T09:26:54.763876" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\browser\\traces\\df6ec251-76b7-44f8-9cd5-0753e068c00a"}</msg>
+<msg time="2024-05-15T09:26:54.966300" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\browser\\traces\\df6ec251-76b7-44f8-9cd5-0753e068c00a"}</msg>
+<msg time="2024-05-15T09:26:54.967300" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-15T09:26:54.984344" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-15T09:26:54.984344" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-15T09:26:56.633814" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-15T09:26:54.762874" elapsed="1.871942"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T09:27:26.635360" level="INFO">Slept 30 seconds.</msg>
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T09:26:56.634816" elapsed="30.000544"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-05-15T09:27:26.771216" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-15T09:27:26.635360" elapsed="0.135856"/>
+</kw>
+<status status="PASS" start="2024-05-15T09:26:54.759084" elapsed="32.012132"/>
+</test>
+<status status="PASS" start="2024-05-15T09:26:53.999394" elapsed="32.781843"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Browser">Test Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-15T09:26:54.763876" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

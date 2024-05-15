@@ -1,0 +1,10 @@
+test insert data in Add New Fund
+    Open Browser      ${URL}    headless=False
+    Sleep    3s
+    Browser.Click     id=addNewFundButton
+    Sleep    3s
+    Type Text      id=${locator}        F13
+    Sleep    2s
+    Browser.Click     id=submitButton
+    Sleep    5s
+    Close Browser

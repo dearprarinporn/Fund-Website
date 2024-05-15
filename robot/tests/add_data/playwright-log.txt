@@ -1,0 +1,40 @@
+{"level":30,"time":"2024-05-15T06:26:08.386Z","pid":16720,"hostname":"INTERN-02","msg":"Listening on 54987"}
+(node:16720) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-05-15T06:26:08.542Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:08.543Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:08.545Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:08.545Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:08.549Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-15T06:26:08.549Z","pid":16720,"hostname":"INTERN-02","msg":"currentBrowser: undefined"}
+{"level":30,"time":"2024-05-15T06:26:08.677Z","pid":16720,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T06:26:08.827Z","pid":16720,"hostname":"INTERN-02","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-15T06:26:08.827Z","pid":16720,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T06:26:10.185Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-15T06:26:10.198Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.200Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.202Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.203Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.206Z","pid":16720,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T06:26:10.206Z","pid":16720,"hostname":"INTERN-02","msg":"Changing current active page: page=6e01847d-2567-4cf1-9baf-efa66720762d"}
+{"level":30,"time":"2024-05-15T06:26:10.206Z","pid":16720,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T06:26:10.208Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.210Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.211Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T06:26:10.212Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T06:26:10.214Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T06:26:10.214Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T06:26:10.216Z","pid":16720,"hostname":"INTERN-02","msg":"Changing current active page: page=6e01847d-2567-4cf1-9baf-efa66720762d"}
+{"level":30,"time":"2024-05-15T06:26:10.216Z","pid":16720,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T06:26:10.219Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.221Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.222Z","pid":16720,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T06:26:10.222Z","pid":16720,"hostname":"INTERN-02","msg":"Changing current active page: page=6e01847d-2567-4cf1-9baf-efa66720762d"}
+{"level":30,"time":"2024-05-15T06:26:10.222Z","pid":16720,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T06:26:10.224Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-05-15T06:26:10.227Z","pid":16720,"hostname":"INTERN-02","msg":"Removed page=28a37d4b-f7f6-4498-9b71-dae717272472 from context=f423a0c8-c2c9-4fde-8ec1-e8ddc4fad17d page stack"}
+{"level":30,"time":"2024-05-15T06:26:10.228Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-05-15T06:26:10.233Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.233Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T06:26:10.261Z","pid":16720,"hostname":"INTERN-02","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-15T06:26:10.289Z","pid":16720,"hostname":"INTERN-02","msg":"End of node method closeAllBrowsers"}

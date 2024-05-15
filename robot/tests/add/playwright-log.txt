@@ -1,0 +1,197 @@
+{"level":30,"time":"2024-05-15T09:40:32.584Z","pid":18876,"hostname":"INTERN-02","msg":"Listening on 59457"}
+(node:18876) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-05-15T09:40:32.756Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:32.756Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:32.758Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:32.758Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:32.762Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:40:32.934Z","pid":18876,"hostname":"INTERN-02","msg":"Adding browser to stack: chromium, version: 124.0.6367.29"}
+{"level":30,"time":"2024-05-15T09:40:32.934Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:40:32.934Z","pid":18876,"hostname":"INTERN-02","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-15T09:40:32.938Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-15T09:40:32.938Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:40:32.938Z","pid":18876,"hostname":"INTERN-02","msg":"Trace file: "}
+{"level":30,"time":"2024-05-15T09:40:32.948Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:40:32.949Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-15T09:40:32.952Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-15T09:40:32.952Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:40:33.102Z","pid":18876,"hostname":"INTERN-02","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-15T09:40:33.102Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T09:40:34.483Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-15T09:40:37.486Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-15T09:40:37.486Z","pid":18876,"hostname":"INTERN-02","msg":"Strict mode is enabled, find Locator with id=app.dashboard.Button.addNewFund in page."}
+{"level":30,"time":"2024-05-15T09:40:37.629Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method click"}
+{"level":30,"time":"2024-05-15T09:40:40.632Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-15T09:40:40.633Z","pid":18876,"hostname":"INTERN-02","msg":"Strict mode is enabled, find Locator with id=app.fundAdd.Button.Back in page."}
+{"level":30,"time":"2024-05-15T09:40:40.878Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method click"}
+{"level":30,"time":"2024-05-15T09:40:43.882Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-05-15T09:40:43.889Z","pid":18876,"hostname":"INTERN-02","msg":"Removed page=52aaa23d-343d-47ae-916c-73aa5396bdc5 from context=17c45fa2-5eb3-4ac2-a926-675a0acaa464 page stack"}
+{"level":30,"time":"2024-05-15T09:40:44.003Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1273:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:534:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:576:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-05-15T09:40:44.019Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:44.019Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:44.022Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:44.022Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:44.024Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:40:44.200Z","pid":18876,"hostname":"INTERN-02","msg":"Adding browser to stack: chromium, version: 124.0.6367.29"}
+{"level":30,"time":"2024-05-15T09:40:44.200Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:40:44.200Z","pid":18876,"hostname":"INTERN-02","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-15T09:40:44.203Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-15T09:40:44.203Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:40:44.203Z","pid":18876,"hostname":"INTERN-02","msg":"Trace file: "}
+{"level":30,"time":"2024-05-15T09:40:44.210Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:40:44.210Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-15T09:40:44.212Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-15T09:40:44.212Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:40:44.350Z","pid":18876,"hostname":"INTERN-02","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-15T09:40:44.350Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T09:40:45.735Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-15T09:40:48.737Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-15T09:40:48.737Z","pid":18876,"hostname":"INTERN-02","msg":"Strict mode is enabled, find Locator with id=app.navbar.button.translate.th in page."}
+{"level":30,"time":"2024-05-15T09:40:48.927Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method click"}
+{"level":30,"time":"2024-05-15T09:40:51.931Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-15T09:40:51.931Z","pid":18876,"hostname":"INTERN-02","msg":"Strict mode is enabled, find Locator with id=app.navbar.button.translate.en in page."}
+{"level":30,"time":"2024-05-15T09:40:52.086Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method click"}
+{"level":30,"time":"2024-05-15T09:40:55.090Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-05-15T09:40:55.094Z","pid":18876,"hostname":"INTERN-02","msg":"Removed page=c833cf65-bdb6-48d6-8be1-e1fcda6965e0 from context=70a52891-b14d-4e9d-8c37-686f657590cf page stack"}
+{"level":30,"time":"2024-05-15T09:40:55.217Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1273:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:534:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:576:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-05-15T09:40:55.221Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:55.221Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:55.223Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:55.223Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:40:55.226Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:40:55.379Z","pid":18876,"hostname":"INTERN-02","msg":"Adding browser to stack: chromium, version: 124.0.6367.29"}
+{"level":30,"time":"2024-05-15T09:40:55.379Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:40:55.379Z","pid":18876,"hostname":"INTERN-02","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-15T09:40:55.382Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-15T09:40:55.382Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:40:55.382Z","pid":18876,"hostname":"INTERN-02","msg":"Trace file: "}
+{"level":30,"time":"2024-05-15T09:40:55.389Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:40:55.389Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-15T09:40:55.391Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-15T09:40:55.391Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:40:55.536Z","pid":18876,"hostname":"INTERN-02","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-15T09:40:55.536Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T09:40:56.905Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-15T09:40:59.909Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-05-15T09:40:59.909Z","pid":18876,"hostname":"INTERN-02","msg":"Strict mode is enabled, find Locator with id=app.dashboard.input.searchInput in page."}
+{"level":30,"time":"2024-05-15T09:40:59.966Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method fillText"}
+{"level":30,"time":"2024-05-15T09:41:02.969Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method click"}
+{"level":30,"time":"2024-05-15T09:41:02.969Z","pid":18876,"hostname":"INTERN-02","msg":"Strict mode is enabled, find Locator with id=app.dashboard.button.clearSearchButton in page."}
+{"level":30,"time":"2024-05-15T09:41:03.064Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method click"}
+{"level":30,"time":"2024-05-15T09:41:06.068Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-05-15T09:41:06.072Z","pid":18876,"hostname":"INTERN-02","msg":"Removed page=927c9274-883a-4a56-b5db-ec998fa1ba6e from context=c8c4c34e-9d4f-4e15-b5d0-d2cca11a194f page stack"}
+{"level":30,"time":"2024-05-15T09:41:06.194Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1273:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:534:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:576:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-05-15T09:41:06.198Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:06.198Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:06.200Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:06.200Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:06.202Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:41:06.352Z","pid":18876,"hostname":"INTERN-02","msg":"Adding browser to stack: chromium, version: 124.0.6367.29"}
+{"level":30,"time":"2024-05-15T09:41:06.352Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-15T09:41:06.352Z","pid":18876,"hostname":"INTERN-02","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-15T09:41:06.355Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-15T09:41:06.355Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:41:06.355Z","pid":18876,"hostname":"INTERN-02","msg":"Trace file: "}
+{"level":30,"time":"2024-05-15T09:41:06.362Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:41:06.362Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-15T09:41:06.365Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-15T09:41:06.365Z","pid":18876,"hostname":"INTERN-02","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-15T09:41:06.512Z","pid":18876,"hostname":"INTERN-02","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-15T09:41:06.512Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active page"}
+{"level":30,"time":"2024-05-15T09:41:08.024Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-15T09:41:11.028Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-05-15T09:41:11.028Z","pid":18876,"hostname":"INTERN-02","msg":"Strict mode is enabled, find Locator with id=app.fundAdd.textBox.fundCodeField in page."}
+{"level":30,"time":"2024-05-15T09:41:21.035Z","pid":18876,"hostname":"INTERN-02","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+  [2m- waiting for locator('id=app.fundAdd.textBox.fundCodeField')[22m
+
+    at fillText (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:9715:17)
+    at async PlaywrightServer.fillText (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10708:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-05-15T09:41:21.038Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-05-15T09:41:21.038Z","pid":18876,"hostname":"INTERN-02","Take screenshot with options: ":{"path":"C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-05-15T09:41:21.144Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-05-15T09:41:30.481Z","pid":18876,"hostname":"INTERN-02","msg":"Removed page=2eacbeca-ab45-4571-856c-64956e27785f from context=7a9b764e-0371-45aa-a9fd-73cb82cec5a8 page stack"}
+{"level":30,"time":"2024-05-15T09:41:32.422Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.422Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.425Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.425Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.428Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:41:32.431Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.431Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.433Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.433Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.435Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.435Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.438Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.438Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.439Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:41:32.440Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-05-15T09:41:32.441Z","pid":18876,"hostname":"INTERN-02","msg":"Error of node method closeContext"}
+================= Original suppressed error =================
+browserContext.close: Target page, context or browser has been closed
+    at async closeContext (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10337:3)
+    at async PlaywrightServer.closeContext (C:\Users\Prarinporn.choo\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10721:28)
+=============================================================
+{"level":30,"time":"2024-05-15T09:41:32.447Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.447Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.448Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.448Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.450Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:41:32.451Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.452Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.453Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.453Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.454Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.454Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-15T09:41:32.456Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.456Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-15T09:41:32.458Z","pid":18876,"hostname":"INTERN-02","msg":"Changed active context"}
+{"level":30,"time":"2024-05-15T09:41:32.459Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-05-15T09:41:32.459Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-05-15T09:41:32.493Z","pid":18876,"hostname":"INTERN-02","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-15T09:41:32.494Z","pid":18876,"hostname":"INTERN-02","msg":"End of node method closeAllBrowsers"}

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-15T16:40:32.046972" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Add" source="C:\Users\Prarinporn.choo\robot\tests\add\test_add.robot">
+<test id="s1-t1" name="test click add new fund button and back to dashboard" line="25">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-15T16:40:32.759598" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T16:40:32.760599" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\c92bb67e-120f-44bc-93e0-7be51fd57b0c"}</msg>
+<msg time="2024-05-15T16:40:32.936032" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\c92bb67e-120f-44bc-93e0-7be51fd57b0c"}</msg>
+<msg time="2024-05-15T16:40:32.936032" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-15T16:40:32.949700" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-15T16:40:32.949700" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-15T16:40:34.484631" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-15T16:40:32.759598" elapsed="1.725033"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:40:37.484670" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:34.484631" elapsed="3.000039"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-15T16:40:37.484670" level="INFO">Clicks the element 'id=app.dashboard.Button.addNewFund'.</msg>
+<arg>${addNewFundButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T16:40:37.484670" elapsed="0.146626"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:40:40.631310" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:37.631296" elapsed="3.000014"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-15T16:40:40.631310" level="INFO">Clicks the element 'id=app.fundAdd.Button.Back'.</msg>
+<arg>${backButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T16:40:40.631310" elapsed="0.249129"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:40:43.880636" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:40.880439" elapsed="3.000197"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-05-15T16:40:44.004507" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-15T16:40:43.880636" elapsed="0.124871"/>
+</kw>
+<status status="PASS" start="2024-05-15T16:40:32.757587" elapsed="11.247920"/>
+</test>
+<test id="s1-t2" name="test click translate button" line="35">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-15T16:40:44.022540" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T16:40:44.023542" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\178b3759-ff1c-4e69-ad58-7a09d2ba8a8e"}</msg>
+<msg time="2024-05-15T16:40:44.200955" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\178b3759-ff1c-4e69-ad58-7a09d2ba8a8e"}</msg>
+<msg time="2024-05-15T16:40:44.201957" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-15T16:40:44.211288" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-15T16:40:44.212289" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-15T16:40:45.736358" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-15T16:40:44.022540" elapsed="1.713818"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:40:48.736376" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:45.736358" elapsed="3.000018"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-15T16:40:48.736376" level="INFO">Clicks the element 'id=app.navbar.button.translate.th'.</msg>
+<arg>${translateTHButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T16:40:48.736376" elapsed="0.192462"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:40:51.930265" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:48.928838" elapsed="3.001427"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-15T16:40:51.930265" level="INFO">Clicks the element 'id=app.navbar.button.translate.en'.</msg>
+<arg>${translateENButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T16:40:51.930265" elapsed="0.157519"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:40:55.088979" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:52.088781" elapsed="3.000198"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-05-15T16:40:55.218580" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-15T16:40:55.088979" elapsed="0.129601"/>
+</kw>
+<status status="PASS" start="2024-05-15T16:40:44.021034" elapsed="11.197546"/>
+</test>
+<test id="s1-t3" name="test input text search" line="44">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-15T16:40:55.225482" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T16:40:55.225482" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\d9bcf73c-8326-4a22-8ef4-6855d943c235"}</msg>
+<msg time="2024-05-15T16:40:55.380112" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\d9bcf73c-8326-4a22-8ef4-6855d943c235"}</msg>
+<msg time="2024-05-15T16:40:55.381115" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-15T16:40:55.389976" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-15T16:40:55.389976" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-15T16:40:56.906594" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-15T16:40:55.224481" elapsed="1.682113"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:40:59.907611" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:56.907594" elapsed="3.000017"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-05-15T16:40:59.907611" level="INFO">Fills the text 'KFSDLV' in the given field.</msg>
+<arg>${inputSearch}</arg>
+<arg>KFSDLV</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T16:40:59.907611" elapsed="0.059439"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:41:02.968120" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:40:59.967050" elapsed="3.001070"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-15T16:41:02.968120" level="INFO">Clicks the element 'id=app.dashboard.button.clearSearchButton'.</msg>
+<arg>${clearSearchButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T16:41:02.968120" elapsed="0.097672"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:41:06.067020" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:41:03.066793" elapsed="3.000227"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-05-15T16:41:06.195780" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-15T16:41:06.067020" elapsed="0.128760"/>
+</kw>
+<status status="PASS" start="2024-05-15T16:40:55.223089" elapsed="10.972691"/>
+</test>
+<test id="s1-t4" name="Test Fill Add Fund Form" line="54">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-15T16:41:06.201786" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T16:41:06.202786" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\f1a3f4e6-6131-48ea-bcf5-bcc13b512d83"}</msg>
+<msg time="2024-05-15T16:41:06.353460" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\add\\browser\\traces\\f1a3f4e6-6131-48ea-bcf5-bcc13b512d83"}</msg>
+<msg time="2024-05-15T16:41:06.354562" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-15T16:41:06.363822" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-15T16:41:06.364823" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-15T16:41:08.025710" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/add</msg>
+<arg>http://localhost:4200/add</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-15T16:41:06.200784" elapsed="1.824926"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T16:41:11.027125" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T16:41:08.026710" elapsed="3.000415"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-05-15T16:41:11.027125" level="INFO">Fills the text 'F13' in the given field.</msg>
+<msg time="2024-05-15T16:41:21.145908" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-15T16:41:21.145908" level="INFO">See also file:///C:/Users/Prarinporn.choo/robot/tests/add/playwright-log.txt for additional details.</msg>
+<arg>${fundCodeInput}</arg>
+<arg>F13</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="FAIL" start="2024-05-15T16:41:11.027125" elapsed="21.385897">Execution terminated by signal</status>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${fundNameInput}</arg>
+<arg>My Fund</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-05-15T16:41:32.413022" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${navInput}</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-05-15T16:41:32.414035" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${unitInput}</arg>
+<arg>4</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-05-15T16:41:32.414035" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-15T16:41:32.414035" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element">
+<arg>${submitButton}</arg>
+<status status="NOT RUN" start="2024-05-15T16:41:32.415452" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-15T16:41:32.416463" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-05-15T16:41:32.416463" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-15T16:41:06.199783" elapsed="26.216680">Execution terminated by signal</status>
+</test>
+<status status="FAIL" start="2024-05-15T16:40:32.047973" elapsed="60.396051"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="Test Add">Test Add</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-15T16:40:32.759598" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T16:40:44.022540" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T16:40:55.225482" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T16:41:06.201786" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

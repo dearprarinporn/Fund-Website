@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-15T11:37:26.833359" rpa="false" schemaversion="5">
+<suite id="s1" name="Click Back" source="C:\Users\Prarinporn.choo\robot\tests\back\click_back.robot">
+<test id="s1-t1" name="test click add new fund button and click back button" line="8">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-15T11:37:27.566984" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T11:37:27.566984" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\back\\browser\\traces\\f89a76d6-8723-43a8-bc8e-0236ddaafdb5"}</msg>
+<msg time="2024-05-15T11:37:27.745912" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\back\\browser\\traces\\f89a76d6-8723-43a8-bc8e-0236ddaafdb5"}</msg>
+<msg time="2024-05-15T11:37:27.745912" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-05-15T11:37:27.760897" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-15T11:37:27.760897" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-05-15T11:37:29.337968" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-15T11:37:27.565980" elapsed="1.771988"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-15T11:37:29.338969" level="INFO">Clicks the element 'id=addNewFundButton'.</msg>
+<arg>id=addNewFundButton</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T11:37:29.338969" elapsed="0.145566"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-15T11:37:29.485536" level="INFO">Clicks the element 'id=backButton'.</msg>
+<arg>id=backButton</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-15T11:37:29.485536" elapsed="0.252621"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T11:37:39.739180" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T11:37:29.738157" elapsed="10.001023"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-05-15T11:37:39.874545" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-15T11:37:39.739180" elapsed="0.135365"/>
+</kw>
+<status status="PASS" start="2024-05-15T11:37:27.564056" elapsed="12.311490"/>
+</test>
+<status status="PASS" start="2024-05-15T11:37:26.833863" elapsed="13.056710"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Click Back">Click Back</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-15T11:37:27.566984" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
