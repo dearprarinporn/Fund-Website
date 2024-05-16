@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-16T14:59:05.093930" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Google" source="C:\Users\Prarinporn.choo\robot\google\test_google.robot">
+<test id="s1-t1" name="Open Example Test Page" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T14:59:05.242220" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T14:59:05.242220" elapsed="2.913532"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-16T14:59:08.158755" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-05-16T14:59:08.155752" elapsed="0.003003"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T14:59:08.159756" level="INFO">Typing text 'AAAA' into text field '//*[@name='q']'.</msg>
+<arg>//*[@name='q']</arg>
+<arg>AAAA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T14:59:08.159756" elapsed="0.051733"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-16T14:59:08.211489" elapsed="6.200217"/>
+</kw>
+<status status="PASS" start="2024-05-16T14:59:05.241208" elapsed="9.170498"/>
+</test>
+<status status="PASS" start="2024-05-16T14:59:05.094932" elapsed="9.317792"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Google">Test Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

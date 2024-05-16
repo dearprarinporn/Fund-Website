@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-16T13:25:13.828616" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Browser" source="C:\Users\Prarinporn.choo\robot\tests\test\test_browser.robot">
+<test id="s1-t1" name="Open Localhost Website" line="24">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-16T13:25:14.531565" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-16T13:25:14.531565" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\test\\browser\\traces\\f356342d-21f0-4d50-93c0-6afbce699219"}</msg>
+<msg time="2024-05-16T13:25:14.689773" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\test\\browser\\traces\\f356342d-21f0-4d50-93c0-6afbce699219"}</msg>
+<msg time="2024-05-16T13:25:14.689773" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-16T13:25:14.703786" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-16T13:25:14.703786" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-16T13:25:16.221787" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-16T13:25:14.530561" elapsed="1.691226"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-16T13:25:18.221800" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-16T13:25:16.221787" elapsed="2.000013"/>
+</kw>
+<status status="PASS" start="2024-05-16T13:25:14.528355" elapsed="3.693445"/>
+</test>
+<test id="s1-t2" name="test input text search" line="28">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-05-16T13:25:18.280856" level="INFO">Fills the text 'KFSDLV' in the given field.</msg>
+<msg time="2024-05-16T13:25:18.298873" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-05-16T13:25:18.298873" level="INFO">See also file:///C:/Users/Prarinporn.choo/robot/tests/test/playwright-log.txt for additional details.</msg>
+<arg>${inputSearch}</arg>
+<arg>KFSDLV</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="FAIL" start="2024-05-16T13:25:18.280856" elapsed="265.633410">Execution terminated by signal</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-16T13:29:43.914266" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${clearSearchButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-05-16T13:29:43.914266" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-16T13:29:43.914266" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-16T13:25:18.277854" elapsed="265.636412">Execution terminated by signal</status>
+</test>
+<status status="FAIL" start="2024-05-16T13:25:13.829618" elapsed="270.092718"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Test Browser">Test Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-16T13:25:14.531565" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

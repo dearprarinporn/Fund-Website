@@ -3,62 +3,29 @@ Library    Browser
 
 *** Variables ***
 ${URL}          http://localhost:4200/ 
-${fundCodeInput}     id=app.fundAdd.textBox.fundCodeField
-${fundNameInput}     id=app.fundAdd.textBox.fundNameField
-${fundTypeInput}     id=app.fundAdd.SelectBox.fundCodeField
-${riskLevelInput}    id=app.fundAdd.SelectBox.fundTypeField
-${transactionTypeInput}  id=app.fundAdd.SelectBox.transactionTypeField
-${navInput}          id=app.fundAdd.numberBox.navField
-${unitInput}         id=app.fundAdd.numberBox.unitField
 ${backButton}        id=app.fundAdd.Button.Back
-${submitButton}      id=app.fundAdd.Button.Submit
 ${addNewFundButton}  id=app.dashboard.Button.addNewFund
-${translateTHButton}    id=app.navbar.button.translate.th
-${translateENButton}    id=app.navbar.button.translate.en
-${clearSearchButton}    id=app.dashboard.button.clearSearchButton
-${inputSearch}      id=app.dashboard.input.searchInput
 ${deleteSelectedRecords}        id="app.dashboard.button.deleteSelectedRecords"
-
+${deleteRow}            id=app.dashboard.button.deleteRow
 
 
 *** Test Cases ***
+Add New Fund Test
+    Open Browser      http://localhost:4200/add        headless=False    
+    Sleep    3s
+    Fill Text       xpath=//*[@id="dx_dx-3b1455b2-cb3e-865a-a441-b2a045a914fe_fundCode"]           AAAAA
+    click           xpath=//*[@id="app.fundAdd.Button.Submit"]/div/span
+    Sleep    5s
+
+
 test click add new fund button and back to dashboard
     Open Browser      ${URL}        headless=False    
     Sleep    3s
-    Browser.Click     ${addNewFundButton}
+    Browser.Click     xpath=//*[@id="app.dashboard.Button.addNewFund"]/div/span
     Sleep    3s
-    Browser.Click     ${backButton} 
-    Sleep    3s
-    Close Browser
-
-
-test click translate button
-    Open Browser      ${URL}        headless=False   
-    Sleep    3s
-    Browser.Click     ${translateTHButton}
-    Sleep    3s
-    Browser.Click     ${translateENButton}
-    Sleep    3s
-    Close Browser
-
-test input text search 
-    Open Browser      ${URL}     headless=False
-    Sleep    3s
-    Browser.Fill text       ${inputSearch}      KFSDLV
-    Sleep    3s
-    Browser.Click       ${clearSearchButton}
+    Browser.Click     xpath=//*[@id="app.fundAdd.Button.Back"]/div/span
     Sleep    3s
     Close Browser
 
 
-Test Fill Add Fund Form
-    Open Browser         http://localhost:4200/add        headless=False
-    Sleep                3s
-    Browser.Fill Text            ${fundCodeInput}     F13
-    Browser.Fill Text            ${fundNameInput}     My Fund
-    Browser.Fill Text            ${navInput}          2
-    Browser.Fill Text            ${unitInput}         4
-    Sleep                3s
-    Click Element        ${submitButton}
-    Sleep                5s
-    Close Browser
+    

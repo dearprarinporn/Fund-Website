@@ -1,0 +1,19 @@
+      <h2 id="addNewFundTitle">{{'Add New Fund' | translate}}</h2>
+        <div class="container">
+          <dx-form [formData]="newFund" [showColonAfterLabel]="true" [colCount]="2" >
+
+            <dxi-item dataField="fundCode"  [editorType]="'dxTextBox'" [editorOptions]="fundCodeEditorOption" [label]="{text:'Fund Code' | translate }"></dxi-item>
+            <dxi-item dataField="fundName" [editorType]="'dxTextBox'" [editorOptions]="fundNameEditorOption" [label]="{text:'Fund Name' | translate }"></dxi-item>
+            <dxi-item dataField="fundType" [editorType]="'dxSelectBox'" [editorOptions]="{ dataSource: fundTypes, value: '' }" [label]="{text:'Fund Type' | translate }"></dxi-item>
+            <dxi-item dataField="riskLevel" [editorType]="'dxSelectBox'" [editorOptions]="{ dataSource: riskLevels, value: '' }" [label]="{text:'Risk Level' | translate }"></dxi-item>
+            <dxi-item dataField="transactionType" [editorType]="'dxSelectBox'" [editorOptions]="{ dataSource: transactionTypes, value: ''  }" [label]="{text:'Transaction Type' | translate }"></dxi-item>
+            <dxi-item dataField="nav" [editorType]="'dxNumberBox'" [editorOptions]="{ value: null }" [label]="{text:'NAV' | translate }"></dxi-item>
+            <dxi-item dataField="unit" [editorType]="'dxNumberBox'" [editorOptions]="{ value: null }"[label]="{text:'Unit' | translate }"></dxi-item>         
+          </dx-form><br>
+          
+          <div class="button-container">
+            <dx-button id="app.fundAdd.Button.Back" type="default" stylingMode="outlined" [text]="'Back' | translate" (onClick)="back()"></dx-button>
+            <dx-button id="app.fundAdd.Button.Submit" type="success" stylingMode="outlined" [text]="'Submit' | translate" (onClick)="onSubmit()"></dx-button>
+
+          </div>
+        </div>  

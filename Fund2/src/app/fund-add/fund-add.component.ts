@@ -9,10 +9,11 @@ import { FundService } from '../fund.service';
   styleUrl: './fund-add.component.css'
 })
 export class FundAddComponent {
-    
   @Output() addFund: EventEmitter<Fund> = new EventEmitter<Fund>();
-
-  
+  fundCodeEditorOption = { inputAttr: {myid: 'app.fundAdd.textinput.fundCode'} }
+  //fundCodeEditorOption : any = {elementAttr: {id: 'app.fundAdd.textinput.fundCode'}};
+  fundNameEditorOption : any  = {elementAttr: {id: 'app.fundAdd.textinput.fundName'}};
+  // app.fundAdd.textBox.fundNameField app.fundAdd.SelectBox.fundCodeField app.fundAdd.numberBox.navField
   newFund: Fund = {
     id: 0,
     fundCode: '',

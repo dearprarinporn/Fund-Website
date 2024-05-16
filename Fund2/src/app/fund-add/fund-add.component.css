@@ -16,27 +16,6 @@ h2 {
     margin-bottom: 5px;
   }
   
-  input, select {
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: inline-block; /* ทำให้ input box เรียงตัวตรงกัน */
-    vertical-align: middle; /* จัดให้เนื้อหาอยู่ตรงกลางตามแนวตั้ง */
-    box-sizing: border-box; /* กำหนดให้ขนาดของ input เป็นขนาดที่ถูกต้องแม้ว่าจะมีการเพิ่ม padding และ border */
-    margin-bottom: 5px; /* ช่องว่างด้านล่างของ input box */
-  }
-  
-  
-  
-  /* ขอบกรอบของ input เมื่อได้รับการคลิก */
-  input:focus, select:focus {
-    border-color: #007bff;
-  }
-  
-  
-  
-  
   .container div {
     margin-bottom: 10px; /* เพิ่มขีดเส้นระหว่าง div ใน container */
   }

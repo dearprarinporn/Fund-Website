@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-16T11:34:01.515570" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Translate" source="C:\Users\Prarinporn.choo\robot\tests\translate\test_translate.robot">
+<test id="s1-t1" name="test click translate button" line="12">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-16T11:34:02.208569" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-16T11:34:02.208569" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\translate\\browser\\traces\\ec14718d-0b76-4b7d-8ab3-63ae3a5f0130"}</msg>
+<msg time="2024-05-16T11:34:02.369208" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\translate\\browser\\traces\\ec14718d-0b76-4b7d-8ab3-63ae3a5f0130"}</msg>
+<msg time="2024-05-16T11:34:02.369208" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-16T11:34:02.384212" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-16T11:34:02.384212" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-16T11:34:03.924461" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-16T11:34:02.208569" elapsed="1.715892"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-16T11:34:03.925467" level="INFO">Clicks the element 'id=app.navbar.button.translate.th'.</msg>
+<arg>${translateTHButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-16T11:34:03.925467" elapsed="0.203265"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-16T11:34:05.129029" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-16T11:34:04.128732" elapsed="1.000297"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-16T11:34:05.129029" level="INFO">Clicks the element 'id=app.navbar.button.translate.en'.</msg>
+<arg>${translateENButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-16T11:34:05.129029" elapsed="0.144060"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-16T11:34:05.273089" level="INFO">Clicks the element 'id=app.dashboard.Button.addNewFund'.</msg>
+<arg>${addNewFundButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-16T11:34:05.273089" elapsed="0.124148"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-16T11:34:06.397542" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-16T11:34:05.397237" elapsed="1.000305"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-16T11:34:06.397542" level="INFO">Clicks the element 'id=app.navbar.button.translate.th'.</msg>
+<arg>${translateTHButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-16T11:34:06.397542" elapsed="0.227895"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-16T11:34:07.626133" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-16T11:34:06.625437" elapsed="1.000696"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-16T11:34:07.626133" level="INFO">Clicks the element 'id=app.navbar.button.translate.en'.</msg>
+<arg>${translateENButton}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-16T11:34:07.626133" elapsed="0.199534"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-16T11:34:08.826583" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-16T11:34:07.825667" elapsed="1.000916"/>
+</kw>
+<status status="PASS" start="2024-05-16T11:34:02.208569" elapsed="6.618014"/>
+</test>
+<status status="PASS" start="2024-05-16T11:34:01.515570" elapsed="7.359496"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Translate">Test Translate</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-16T11:34:02.208569" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

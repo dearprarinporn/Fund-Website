@@ -80,19 +80,19 @@
                 hint: '',
                 icon: 'trash',
                 onClick: this.deleteRow.bind(this),
-                name: 'deleteButton' // กำหนด ID ให้กับปุ่ม delete
+                name: 'app.dashboard.button.deleteRow' // กำหนด ID ให้กับปุ่ม delete
               },
               {
                 hint: '',
                 icon: 'edit',
                 onClick: this.editRow.bind(this),
-                name: 'editButton' // กำหนด ID ให้กับปุ่ม edit
+                name: 'app.dashboard.button.editRow' // กำหนด ID ให้กับปุ่ม edit
               },
               {
                 hint: '',
                 icon: 'eyeopen',
                 onClick: this.viewRow.bind(this),
-                name: 'viewButton' // กำหนด ID ให้กับปุ่ม view
+                name: 'app.dashboard.button.viewRow' // กำหนด ID ให้กับปุ่ม view
               },
             ]
           }
