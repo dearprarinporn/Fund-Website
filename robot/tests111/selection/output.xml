@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-17T09:40:29.026113" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Select" source="C:\Users\Prarinporn.choo\robot\tests\selection\test_select.robot">
+<test id="s1-t1" name="Select Fund" line="9">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-17T09:40:29.744711" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-17T09:40:29.744711" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\selection\\browser\\traces\\2314d536-9d5c-418c-b9ae-e51cfefbb615"}</msg>
+<msg time="2024-05-17T09:40:29.911851" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\selection\\browser\\traces\\2314d536-9d5c-418c-b9ae-e51cfefbb615"}</msg>
+<msg time="2024-05-17T09:40:29.911851" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-17T09:40:29.926236" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-17T09:40:29.926236" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-05-17T09:40:31.753251" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-17T09:40:29.743707" elapsed="2.009544"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-17T09:40:33.754403" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-17T09:40:31.753251" elapsed="2.001152"/>
+</kw>
+<kw name="Check Checkbox For Fund Code">
+<kw name="Get Row Locator For Fund Code">
+<kw name="//dx-data-grid//tr[td[contains(text(),'${fund_code}')]]">
+<msg time="2024-05-17T09:40:33.755923" level="FAIL">No keyword with name '//dx-data-grid//tr[td[contains(text(),'${fund_code}')]]' found.</msg>
+<var>${row_locator}</var>
+<status status="FAIL" start="2024-05-17T09:40:33.755923" elapsed="0.000000">No keyword with name '//dx-data-grid//tr[td[contains(text(),'${fund_code}')]]' found.</status>
+</kw>
+<return>
+<value>${row_locator}</value>
+<status status="NOT RUN" start="2024-05-17T09:40:33.755923" elapsed="0.000000"/>
+</return>
+<var>${row_locator}</var>
+<arg>${fund_code}</arg>
+<status status="FAIL" start="2024-05-17T09:40:33.754403" elapsed="0.001520">No keyword with name '//dx-data-grid//tr[td[contains(text(),'${fund_code}')]]' found.</status>
+</kw>
+<kw name="Get Checkbox Locator For Row">
+<var>${checkbox_locator}</var>
+<arg>${row_locator}</arg>
+<status status="NOT RUN" start="2024-05-17T09:40:33.755923" elapsed="0.000000"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>${checkbox_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-05-17T09:40:33.756942" elapsed="0.000000"/>
+</kw>
+<arg>${FUND_CODE}</arg>
+<status status="FAIL" start="2024-05-17T09:40:33.754403" elapsed="0.002539">No keyword with name '//dx-data-grid//tr[td[contains(text(),'${fund_code}')]]' found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T09:40:33.756942" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-17T09:40:29.741422" elapsed="4.015520">No keyword with name '//dx-data-grid//tr[td[contains(text(),'${fund_code}')]]' found.</status>
+</test>
+<status status="FAIL" start="2024-05-17T09:40:29.027136" elapsed="4.785695"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Select">Test Select</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-17T09:40:29.023599" level="WARN">Error in file 'C:\Users\Prarinporn.choo\robot\tests\selection\test_select.robot' on line 32: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-17T09:40:29.023599" level="WARN">Error in file 'C:\Users\Prarinporn.choo\robot\tests\selection\test_select.robot' on line 38: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-17T09:40:29.744711" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
