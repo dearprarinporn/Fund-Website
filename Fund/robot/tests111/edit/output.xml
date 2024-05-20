@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-17T11:41:01.487616" rpa="false" schemaversion="5">
+<suite id="s1" name="Edit Fund" source="C:\Users\Prarinporn.choo\robot\tests111\edit\edit_fund.robot">
+<test id="s1-t1" name="click back button" line="10">
+<kw name="Open Browser">
+<msg time="2024-05-17T11:41:03.365504" level="FAIL">Multiple keywords with name 'Open Browser' found. Give the full name of the keyword you want to use:
+    Browser.Open Browser
+    SeleniumLibrary.Open Browser</msg>
+<arg>http://localhost:4200/</arg>
+<arg>headless=False</arg>
+<status status="FAIL" start="2024-05-17T11:41:03.364502" elapsed="0.001002">Multiple keywords with name 'Open Browser' found. Give the full name of the keyword you want to use:
+    Browser.Open Browser
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T11:41:03.365504" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>xpath=//*[@id="dx-e21842dc-aa84-26ad-9a76-985a031cc427"]/tbody/tr[5]/td[11]/a[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-05-17T11:41:03.365504" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T11:41:03.365504" elapsed="0.000000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>id=checkbox</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-17T11:41:03.365504" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-17T11:41:03.362016" elapsed="0.004488">Multiple keywords with name 'Open Browser' found. Give the full name of the keyword you want to use:
+    Browser.Open Browser
+    SeleniumLibrary.Open Browser</status>
+</test>
+<status status="FAIL" start="2024-05-17T11:41:01.488617" elapsed="1.915398"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Edit Fund">Edit Fund</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
