@@ -1,0 +1,20 @@
+<div *ngIf="fund">
+    <h2>{{'Details Edit' | translate}}</h2>
+    <h2>{{ fund.fundName | uppercase }}</h2>
+    <div class="container">
+        <dx-form id="app.fundEdit.formData" [formData]="fund" labelLocation="left" [colCount]="2">
+            <dxi-item dataField="fundCode" editorType="dxTextBox" [editorOptions]="{ dataSource: fundCode , inputAttr: { myid: 'app.fundEdit.TextBox.fundCode' } }" [label]="{text:'Fund Code' | translate }"></dxi-item>
+            <dxi-item dataField="fundName" editorType="dxTextBox" [editorOptions]="{ inputAttr: { myid: 'app.fundEdit.TextBox.fundName' } }"  [label]="{text:'Fund Name' | translate }"></dxi-item>
+            <dxi-item dataField="fundType" editorType="dxSelectBox" [editorOptions]="{ dataSource: fundTypes ,inputAttr: { myid: 'app.fundEdit.TextBox.fundType' } }" [label]="{text:'Fund Type' | translate }" ></dxi-item>
+            <dxi-item dataField="riskLevel" editorType="dxSelectBox" [editorOptions]="{ dataSource: riskLevels , inputAttr: { myid: 'app.fundEdit.TextBox.riskLevel' }}" [label]="{text:'Risk Level' | translate }" ></dxi-item>
+            <dxi-item dataField="transactionType" editorType="dxSelectBox" [editorOptions]="{ dataSource: transactionTypes ,inputAttr: { myid: 'app.fundEdit.TextBox.transactionTypes' }}" [label]="{text:'Transaction Type' | translate }" ></dxi-item>
+            <dxi-item dataField="nav" editorType="dxNumberBox" [editorOptions]="{ min: 0, max: 9999.9999, step: 'any' ,inputAttr: { myid: 'app.fundEdit.TextBox.nav' }}" [label]="{text:'NAV' | translate }" ></dxi-item>
+            <dxi-item dataField="unit" editorType="dxNumberBox" [editorOptions]="{ min: 0, max: 9999999.9999, step: 'any' ,inputAttr: { myid: 'app.fundEdit.TextBox.unit' }}" [label]="{text:'Unit' | translate }" ></dxi-item>
+        </dx-form><br>
+        <div class="button-container">
+            <dx-button [elementAttr]="{id:'app.fundEdit.button.Back'}" type="default" stylingMode="outlined" [text]="'Back' | translate" (onClick)="back()"></dx-button>
+            <dx-button [elementAttr]="{id:'app.fundEdit.button.Submit'}" type="success" stylingMode="outlined" [text]="'Submit' | translate" (onClick)="saveAndNavigateToDashboard()"></dx-button>
+        </div>  
+    </div>
+</div>
+    

@@ -1,0 +1,21 @@
+<div *ngIf="fund">
+    <h2>{{'Details' | translate}} </h2>
+    <h2>{{ fund.fundName | uppercase }}</h2>
+    <div class="container">
+        <dx-form id="app.fundDetail.formData" [formData]="fund" labelLocation="left" [colCount]="2" >
+            <dxi-item dataField="fundCode" editorType="dxTextBox" [editorOptions]="{ readOnly: true  }" [label]="{text:'Fund Code' | translate }" ></dxi-item>
+            <dxi-item dataField="fundName" editorType="dxTextBox" [editorOptions]="{ readOnly: true }" [label]="{text:'Fund Name' | translate }"></dxi-item>
+            <dxi-item dataField="fundType" editorType="dxTextBox" [editorOptions]="{ readOnly: true}"  [label]="{text:'Fund Type' | translate }"></dxi-item>
+            <dxi-item dataField="riskLevel" editorType="dxTextBox" [editorOptions]="{ readOnly: true}" [label]="{text:'Risk Level' | translate }"></dxi-item>
+            <dxi-item dataField="transactionType" editorType="dxTextBox" [editorOptions]="{ readOnly: true }" [label]="{text:'Transaction Type' | translate }"></dxi-item>
+            <dxi-item dataField="nav" editorType="dxNumberBox" [editorOptions]="{ readOnly: true }" [label]="{text:'NAV' | translate }"></dxi-item>
+            <dxi-item dataField="unit" editorType="dxNumberBox" [editorOptions]="{ readOnly: true}" [label]="{text:'Unit' | translate }"></dxi-item>
+            <dxi-item dataField="amount" editorType="dxNumberBox" [editorOptions]="{ readOnly: true }" [label]="{text:'Amount' | translate }"></dxi-item>
+            <dxi-item dataField="createDateTime" editorType="dxTextBox" [editorOptions]="{ readOnly: true }" [label]="{text:'Date' | translate }"></dxi-item>
+        </dx-form><br>
+        <div class="button-container">
+            <dx-button [elementAttr]="{id:'app.fundDetail.button.Back'}" type="default" stylingMode="outlined" [text]="'Back' | translate" (onClick)="back()"></dx-button>
+        </div>
+    </div>
+</div>
+  

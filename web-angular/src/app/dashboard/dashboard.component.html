@@ -1,0 +1,61 @@
+<div id="app-container">
+  <dx-data-grid
+    id="gridContainer"
+    class="grid theme-dependent"
+    [dataSource]="dataSource"
+    [columns]="columns" 
+    [showBorders]="true"
+    [remoteOperations]="true"
+    [columnAutoWidth]="true"
+    [allowColumnReordering]="true"
+    width="1400px" 
+    (onSelectionChanged)="onSelectionChanged($event)"
+  >
+
+  <dxo-selection  showCheckBoxesMode="always" mode="multiple"></dxo-selection>
+    <dxo-toolbar>   
+      <dxi-item location="before">
+        <div class="search-container">
+          <input type="text" 
+                [(ngModel)]="searchValue" 
+                placeholder="{{ 'Search' | translate }}" 
+                class="search-input" 
+                (input)="search()"
+                id="app.dashboard.input.searchInput">
+          <dx-button *ngIf="searchValue"
+                    class="clear-search-button"
+                    (click)="clearSearch()"
+                    text="x"
+                    stylingMode="contained"   
+                    type="danger"
+                    [elementAttr]="{id:'app.dashboard.button.clearSearchButton'}"
+          ></dx-button>
+        </div>
+      </dxi-item>
+      <dxi-item location="after">
+        <dx-button
+          (click)="addrow()"
+          icon="add"
+          [text]="'Add New Fund' | translate"
+          style="margin-right: 10px;"
+          stylingMode="outlined"
+          type="default"
+          [width]="150"
+          [elementAttr]="{id:'app.dashboard.Button.addNewFund'}"
+        ></dx-button>
+        <dx-button
+          (click)="deleteRecords()"
+          [disabled]="selectedItemKeys.length === 0"
+          icon="trash"
+          [text]="'Delete Selected Records' | translate"
+          style="margin-right: 10px;"
+          stylingMode="outlined"
+          type="danger"
+          [width]="220"
+          [elementAttr]="{id:'app.dashboard.button.deleteSelectedRecords'}"
+        ></dx-button>   
+      </dxi-item> 
+    </dxo-toolbar>        
+  </dx-data-grid>   
+</div>
+

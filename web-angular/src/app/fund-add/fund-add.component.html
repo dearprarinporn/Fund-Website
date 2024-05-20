@@ -1,0 +1,18 @@
+<h2 id="add New Fund Title">{{'Add New Fund' | translate}}</h2>
+<div class="container">
+  <dx-form id="app.fundAdd.formData" [formData]="newFund" [showColonAfterLabel]="true" [colCount]="2">
+    <dxi-item dataField="fundCode" [editorType]="'dxTextBox'" [editorOptions]="{ inputAttr: {myid: 'app.fundAdd.textbox.fundCode'} }" [label]="{text:'Fund Code' | translate }"></dxi-item>
+    <dxi-item dataField="fundName" [editorType]="'dxTextBox'" [editorOptions]="{ inputAttr: {myid: 'app.fundAdd.textbox.fundName'} }" [label]="{text:'Fund Name' | translate }"></dxi-item>
+    <dxi-item dataField="fundType" [editorType]="'dxSelectBox'" [editorOptions]="{ dataSource: fundTypes, value: '', inputAttr: { myid: 'app.fundAdd.SelectBox.fundType' } }" [label]="{text:'Fund Type' | translate }"></dxi-item>
+    <dxi-item dataField="riskLevel" [editorType]="'dxSelectBox'" [editorOptions]="{ dataSource: riskLevels, value: '', inputAttr: { myid: 'app.fundAdd.SelectBox.riskLevel' } }" [label]="{text:'Risk Level' | translate }"></dxi-item>
+    <dxi-item dataField="transactionType" [editorType]="'dxSelectBox'" [editorOptions]="{ dataSource: transactionTypes, value: '', inputAttr: { myid: 'app.fundAdd.SelectBox.transactionType' } }" [label]="{text:'Transaction Type' | translate }"></dxi-item>
+    <dxi-item dataField="nav" [editorType]="'dxNumberBox'" [editorOptions]="{ value: null, inputAttr: { myid: 'app.fundAdd.NumberBox.nav' } }" [label]="{text:'NAV' | translate }"></dxi-item>
+    <dxi-item dataField="unit" [editorType]="'dxNumberBox'" [editorOptions]="{ value: null, inputAttr: { myid: 'app.fundAdd.NumberBox.unit' } }" [label]="{text:'Unit' | translate }"></dxi-item>         
+  </dx-form><br>
+  <div class="button-container">
+    <dx-button [elementAttr]="{id:'app.fundAdd.button.Back'}" type="default" stylingMode="outlined" [text]="'Back' | translate" (onClick)="back()"></dx-button>
+    <dx-button [elementAttr]="{id:'app.fundAdd.button.Submit'}" type="success" stylingMode="outlined" [text]="'Submit' | translate" (onClick)="onSubmit()"></dx-button>
+  </div>
+</div>
+
+
