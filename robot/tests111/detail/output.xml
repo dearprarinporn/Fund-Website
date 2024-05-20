@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-15T13:45:57.118236" rpa="false" schemaversion="5">
+<suite id="s1" name="Test View" source="C:\Users\Prarinporn.choo\robot\tests\detail\test_view.robot">
+<test id="s1-t1" name="Test View Button" line="8">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-05-15T13:45:57.863776" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-05-15T13:45:57.863776" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\tests\\detail\\browser\\traces\\7c8e0d83-f00a-4c9e-8223-ccfb4a95283b"}</msg>
+<msg time="2024-05-15T13:45:58.047911" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\tests\\detail\\browser\\traces\\7c8e0d83-f00a-4c9e-8223-ccfb4a95283b"}</msg>
+<msg time="2024-05-15T13:45:58.048912" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-05-15T13:45:58.062735" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-15T13:45:58.062735" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2024-05-15T13:45:59.743524" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-05-15T13:45:57.863776" elapsed="1.879748"/>
+</kw>
+<kw name="Click Element">
+<msg time="2024-05-15T13:45:59.745526" level="FAIL">No keyword with name 'Click Element' found. Did you try using keyword 'Browser.Click' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>id=gridContainer /deep/ .dx-button-icon.dx-icon-eyeopen</arg>
+<arg>Sleep</arg>
+<arg>10s</arg>
+<status status="FAIL" start="2024-05-15T13:45:59.744526" elapsed="0.001000">No keyword with name 'Click Element' found. Did you try using keyword 'Browser.Click' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-05-15T13:45:59.745526" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-15T13:45:57.860385" elapsed="1.885141">No keyword with name 'Click Element' found. Did you try using keyword 'Browser.Click' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2024-05-15T13:45:57.119237" elapsed="2.686331"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test View">Test View</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-15T13:45:57.863776" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

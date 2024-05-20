@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-17T13:24:41.174169" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Add" source="C:\Users\Prarinporn.choo\robot\tests111\add\test_add.robot">
+<test id="s1-t1" name="click add new fund button" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-17T13:24:41.322167" level="INFO">Opening browser 'headless=False' to base url 'http://localhost:4200/'.</msg>
+<msg time="2024-05-17T13:24:41.322167" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-17T13:24:41.322167" level="FAIL">ValueError: headless=false is not a supported browser.</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-05-17T13:24:41.322167" elapsed="0.001001">ValueError: headless=false is not a supported browser.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:41.324169" elapsed="0.000000"/>
+</kw>
+<kw name="Browser.Click">
+<arg>xpath=//*[@id="app.dashboard.Button.addNewFund"]/div/span</arg>
+<status status="NOT RUN" start="2024-05-17T13:24:41.325170" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:41.325170" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-17T13:24:41.321166" elapsed="0.004004">ValueError: headless=false is not a supported browser.</status>
+</test>
+<test id="s1-t2" name="Click back to dashboard" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-17T13:24:41.325170" level="INFO">Opening browser 'headless=False' to base url 'http://localhost:4200/'.</msg>
+<msg time="2024-05-17T13:24:41.325170" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-17T13:24:41.326673" level="FAIL">ValueError: headless=false is not a supported browser.</msg>
+<arg>${URL}</arg>
+<arg>headless=False</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-05-17T13:24:41.325170" elapsed="0.001503">ValueError: headless=false is not a supported browser.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:41.326673" elapsed="0.000000"/>
+</kw>
+<kw name="Browser.Click">
+<arg>xpath=//*[@id="app.dashboard.Button.addNewFund"]/div/span</arg>
+<status status="NOT RUN" start="2024-05-17T13:24:41.327683" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:41.327683" elapsed="0.000000"/>
+</kw>
+<kw name="Browser.Click">
+<arg>xpath=//*[@id="app.fundAdd.Button.Back"]/div/span</arg>
+<status status="NOT RUN" start="2024-05-17T13:24:41.328683" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:41.328683" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-17T13:24:41.325170" elapsed="0.004513">ValueError: headless=false is not a supported browser.</status>
+</test>
+<test id="s1-t3" name="Add New Fund Test" line="21">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-17T13:24:41.330685" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200/add'.</msg>
+<arg>${URL}add</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-17T13:24:41.330685" elapsed="2.420994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-17T13:24:46.752718" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-17T13:24:43.752680" elapsed="3.000038"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-17T13:24:46.752718" level="INFO">Typing text 'AAAAA' into text field 'xpath=//*[@id="dx_dx-3b1455b2-cb3e-865a-a441-b2a045a914fe_fundCode"]'.</msg>
+<msg time="2024-05-17T13:24:46.836888" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-17T13:24:46.836888" level="FAIL">Element with locator 'xpath=//*[@id="dx_dx-3b1455b2-cb3e-865a-a441-b2a045a914fe_fundCode"]' not found.</msg>
+<arg>xpath=//*[@id="dx_dx-3b1455b2-cb3e-865a-a441-b2a045a914fe_fundCode"]</arg>
+<arg>AAAAA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-17T13:24:46.752718" elapsed="0.085183">Element with locator 'xpath=//*[@id="dx_dx-3b1455b2-cb3e-865a-a441-b2a045a914fe_fundCode"]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:46.837901" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app.fundAdd.Button.Submit"]/div/span</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:46.838900" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-17T13:24:46.838900" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-17T13:24:41.329683" elapsed="5.509217">Element with locator 'xpath=//*[@id="dx_dx-3b1455b2-cb3e-865a-a441-b2a045a914fe_fundCode"]' not found.</status>
+</test>
+<status status="FAIL" start="2024-05-17T13:24:41.175170" elapsed="5.664731"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Test Add">Test Add</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

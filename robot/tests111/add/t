@@ -1,0 +1,99 @@
+test insert data in Add New Fund
+    Open Browser      ${URL}    headless=False
+    Sleep    3s
+    Browser.Click     id=addNewFundButton
+    Sleep    3s
+    Type Text      id=${locator}        F13
+    Sleep    2s
+    Browser.Click     id=submitButton
+    Sleep    5s
+    Close Browser
+
+
+test click delete row
+    Open Browser      ${URL}        headless=False    
+    Sleep    3s
+    Get Title      ==    Fund
+    Browser.Click     ${deleteRow}
+    Sleep    3s
+
+Test Fill Add Fund Form
+    Open Browser         ${URL}        headless=False
+    Sleep                2s
+    Browser.Click     ${addNewFundButton}
+    Sleep                2s
+    Fill Text            ${fundCodeInput}        F13
+    Fill Text            ${fundNameInput}       My Fund
+    Fill Text            ${navInput}                2
+    Fill Text            ${unitInput}           4
+    Browser.Click       ${submitButton}
+    Sleep                3s
+    Close Browser
+
+
+Add New Fund Test
+    Open Browser      ${URL}        headless=False    
+    Sleep    3s
+    Browser.Click     ${addNewFundButton}
+    Sleep    3s
+
+    # Fill out the form
+    Fill Text    css=.dx-texteditor-input#dx_dx-367cc237-353d-d4ad-84a9-255d149d8a3c_fundCode    F123
+    
+    # Submit the form   
+    Click    id=app.fundAdd.button.submit
+
+    # Verify successful submission
+    Wait For Elements State    text=Dashboard    visible
+    Close Browser
+
+
+
+
+Add New Fund Test
+    New Browser    headless=false
+    New Context
+    New Page    http://localhost:4200/add 
+    Wait For Elements State    //h2[@id='addNewFundTitle']    visible
+    Fill Text    xpath=//*[@id="app.fundAdd.textBox.fundCodeField"]//input    F123
+    Fill Text    xpath=//*[@id="app.fundAdd.textBox.fundNameField"]//input    My Test Fund
+    Select Options By    xpath=//*[@id="app.fundAdd.SelectBox.fundTypeField"]//select    label=GOLD
+    Select Options By    xpath=//*[@id="app.fundAdd.SelectBox.riskLevelField"]//select    label=1
+    Select Options By    xpath=//*[@id="app.fundAdd.SelectBox.transactionTypeField"]//select    label=SUBSCRIPTION
+    Fill Text    xpath=//*[@id="app.fundAdd.numberBox.navField"]//input    100
+    Fill Text    xpath=//*[@id="app.fundAdd.numberBox.unitField"]//input    10
+
+    Click    xpath=//*[@id="app.fundAdd.Button.Submit"]
+    Wait For Elements State    //div[text()='Dashboard']    visible
+    Close Browser
+
+
+
+
+Add New Fund Test
+    New Browser    headless=false
+    New Context
+    New Page    ${URL}
+    Wait For Elements State    //h2[@id='addNewFundTitle']    visible
+
+    # Fill out the form using XPath selectors
+    Fill Text    xpath=//*[@id="app.fundAdd.textBox.fundCodeField"]//input    F123
+    Fill Text    xpath=//*[@id="app.fundAdd.textBox.fundNameField"]//input    My Test Fund
+    Select Options By    xpath=//*[@id="app.fundAdd.SelectBox.fundTypeField"]//select    label=GOLD
+    Select Options By    xpath=//*[@id="app.fundAdd.SelectBox.riskLevelField"]//select    label=1
+    Select Options By    xpath=//*[@id="app.fundAdd.SelectBox.transactionTypeField"]//select    label=SUBSCRIPTION
+    Fill Text    xpath=//*[@id="app.fundAdd.numberBox.navField"]//input    100
+    Fill Text    xpath=//*[@id="app.fundAdd.numberBox.unitField"]//input    10
+
+    # Submit the form
+    Click    xpath=//*[@id="app.fundAdd.Button.Submit"]
+
+    # Verify successful submission
+    Wait For Elements State    //div[text()='Dashboard']    visible
+    Close Browser
+
+
+
+
+
+
