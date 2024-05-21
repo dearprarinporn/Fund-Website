@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-21T16:41:48.081610" rpa="false" schemaversion="5">
+<suite id="s1" name="translate Page" source="C:\Users\Prarinporn.choo\robot\test\translate Page.robot">
+<test id="s1-t1" name="Translate Dashboard Page" line="10">
+<kw name="Init Browser And Open Application" owner="Init Browser">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-05-21T16:41:48.832955" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Prarinporn.choo\\robot\\results\\browser\\traces\\19cdb138-784c-41e6-9d44-f1647115ad5f"}</msg>
+<msg time="2024-05-21T16:41:49.005569" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Prarinporn.choo\\robot\\results\\browser\\traces\\19cdb138-784c-41e6-9d44-f1647115ad5f"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-05-21T16:41:48.832955" elapsed="0.172614"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-05-21T16:41:49.006819" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-05-21T16:41:49.019833" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-21T16:41:49.020834" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<arg>viewport={ "width": 1280, "height": 720 }</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-05-21T16:41:49.005569" elapsed="0.015265"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-05-21T16:41:50.542651" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>http://localhost:4200/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-05-21T16:41:49.020834" elapsed="1.521817"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:48.831941" elapsed="1.710710"/>
+</kw>
+<kw name="click translate TH button" owner="Translate">
+<kw name="Click" owner="Browser">
+<msg time="2024-05-21T16:41:50.544651" level="INFO">Clicks the element 'xpath=//*[@id="app.navbar.button.translate.th"]'.</msg>
+<arg>xpath=//*[@id="app.navbar.button.translate.th"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-21T16:41:50.543650" elapsed="0.195084"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T16:41:51.738760" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T16:41:50.738734" elapsed="1.000026"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:50.543650" elapsed="1.195110"/>
+</kw>
+<kw name="click translate EN button" owner="Translate">
+<kw name="Click" owner="Browser">
+<msg time="2024-05-21T16:41:51.739782" level="INFO">Clicks the element 'xpath=//*[@id="app.navbar.button.translate.en"]/div'.</msg>
+<arg>xpath=//*[@id="app.navbar.button.translate.en"]/div</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-21T16:41:51.738760" elapsed="0.145307"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T16:41:52.884494" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T16:41:51.884067" elapsed="1.000427"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:51.738760" elapsed="1.145734"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:48.829544" elapsed="4.054950"/>
+</test>
+<test id="s1-t2" name="Translate Add New Fund Page" line="17">
+<kw name="Open Browser To Fund Add Page">
+<kw name="Init Browser And Open Application" owner="Init Browser">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-05-21T16:41:52.939753" level="INFO">Switching browser to browser=ac6b921d-60f1-4952-91f5-a9025d811040</msg>
+<msg time="2024-05-21T16:41:52.942755" level="INFO">Successfully changed active browser: browser=ac6b921d-60f1-4952-91f5-a9025d811040</msg>
+<msg time="2024-05-21T16:41:52.942755" level="INFO">Reusing existing browser with id: browser=ac6b921d-60f1-4952-91f5-a9025d811040</msg>
+<arg>browser=chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-05-21T16:41:52.938751" elapsed="0.004004"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-05-21T16:41:52.943756" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-05-21T16:41:52.950442" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-21T16:41:52.950442" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<arg>viewport={ "width": 1280, "height": 720 }</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-05-21T16:41:52.942755" elapsed="0.007687"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-05-21T16:41:54.384019" level="INFO">Successfully initialized new page object and opened url: http://localhost:4200/</msg>
+<arg>http://localhost:4200/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-05-21T16:41:52.951444" elapsed="1.432575"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:52.938751" elapsed="1.445268"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-05-21T16:41:54.384019" level="INFO">Clicks the element 'xpath=//*[@id="app.dashboard.Button.addNewFund"]/div/span'.</msg>
+<arg>xpath=//*[@id="app.dashboard.Button.addNewFund"]/div/span</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-21T16:41:54.384019" elapsed="0.125077"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:52.938751" elapsed="1.570345"/>
+</kw>
+<kw name="click translate TH button" owner="Translate">
+<kw name="Click" owner="Browser">
+<msg time="2024-05-21T16:41:54.510111" level="INFO">Clicks the element 'xpath=//*[@id="app.navbar.button.translate.th"]'.</msg>
+<arg>xpath=//*[@id="app.navbar.button.translate.th"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-21T16:41:54.510111" elapsed="0.250297"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T16:41:55.761436" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T16:41:54.760408" elapsed="1.001028"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:54.509096" elapsed="1.252340"/>
+</kw>
+<kw name="click translate EN button" owner="Translate">
+<kw name="Click" owner="Browser">
+<msg time="2024-05-21T16:41:55.762458" level="INFO">Clicks the element 'xpath=//*[@id="app.navbar.button.translate.en"]/div'.</msg>
+<arg>xpath=//*[@id="app.navbar.button.translate.en"]/div</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-05-21T16:41:55.761436" elapsed="0.212848"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T16:41:56.974557" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T16:41:55.974284" elapsed="1.000273"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:55.761436" elapsed="1.213121"/>
+</kw>
+<status status="PASS" start="2024-05-21T16:41:52.934725" elapsed="4.039832"/>
+</test>
+<status status="PASS" start="2024-05-21T16:41:48.082611" elapsed="8.936140"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="translate Page">translate Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,65 @@
+*** Settings ***
+Library    Browser
+
+*** Test Cases ***
+Test Select All Items
+    Open Browser    https://yourwebsite.com    chrome
+    Maximize Browser Window
+    Wait Until Page Contains Element    id:dxo-selection-element-id    # รอให้หน้าเว็บโหลดเสร็จสมบูรณ์
+
+    # เลือกทั้งหมดใน dxo-selection
+    Click Element    id:dxo-select-all-button-id
+
+    # ทดสอบว่าทุกองค์ประกอบถูกเลือกหรือไม่
+    ${selected_items}    Get WebElements    xpath://div[@id='dxo-selection-element-id']//div[@class='selected']
+    Should Be True    ${selected_items}    # ตรวจสอบว่ามีองค์ประกอบที่ถูกเลือกทั้งหมดหรือไม่
+
+    # ทดสอบการทำงานเพิ่มเติมที่นี่
+    # ...
+
+*** Keywords ***
+Maximize Browser Window
+    Set Window Size    1920    1080
+
+--------------------------------
+*** Settings ***
+Library    Browser
+Library           SeleniumLibrary   
+Resource    ../resource/Init Browser.robot
+Resource    ../resource/Search.robot
+
+
+*** Test Cases ***
+Search Fund From List
+    Init Browser And Open Application
+    Browser.Click    //span[@class='dx-checkbox-icon' and @aria-label='Select all']
+
+
+---------------
+<div class="dx-widget dx-checkbox dx-select-checkbox dx-datagrid-checkbox-size" aria-label="Select all" aria-readonly="false" aria-invalid="false" role="checkbox" aria-checked="false" tabindex="0"><input type="hidden" value="false"><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span></div></div>
+
+
+xpath=//dxo-selection//div[contains(@class,'selected')]
+
+-------------
+<div class="dx-widget dx-checkbox dx-checkbox-checked dx-select-checkbox dx-datagrid-checkbox-size" aria-label="Select all" aria-readonly="false" aria-invalid="false" role="checkbox" aria-checked="true" tabindex="0"><input type="hidden" value="true"><div class="dx-checkbox-container"><span class="dx-checkbox-icon"></span></div></div>
+----------
+//*[@id="dx-78886866-1a43-91d7-9012-c2a1373122a2"]/tbody/tr[1]/td[1]/div
+
+//*[@id="dx-78886866-1a43-91d7-9012-c2a1373122a2"]/tbody/tr[1]/td[1]/div
+
+//*[@id="dx-78886866-1a43-91d7-9012-c2a1373122a2"]/tbody/tr[1]/td[1]/div
+
+//*[@id="dx-78886866-1a43-91d7-9012-c2a1373122a2"]/tbody/tr[2]/td[1]/div/div/span
+
+//*[@id="dx-39e613d3-41be-7bd0-9e4e-fa5e44e88a39"]/tbody/tr[2]/td[1]/div/div/span
+
+
+//*[@id="app.datagrid"]
+
+
+//*[@id="app.datagrid"]/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td[1]/div/div/span
+
+
+----------------------
+ใช้พวก get table element  ใน browser library       เข้าถึงพวก table tr[2]/td[1] ให้ได้ก่อน แล้วค่อยเข้าไป click หรือ checkbox ต่อไป 

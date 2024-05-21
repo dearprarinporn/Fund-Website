@@ -1,0 +1,61 @@
+*** Settings ***
+Library     Browser
+
+*** Keywords ***
+Insert Fund data
+    [Arguments]     ${FUND_CODE}     ${FUND_NAME}     ${NAV}    ${UNIT}    
+    Fill text       xpath=//*[@myid="app.fundAdd.textbox.fundCode"]     ${FUND_CODE}
+    Fill text       xpath=//*[@myid="app.fundAdd.textbox.fundName"]     ${FUND_NAME}
+    Fill text       xpath=//*[@myid="app.fundAdd.NumberBox.nav"]     ${NAV}
+    Fill text       xpath=//*[@myid="app.fundAdd.NumberBox.unit"]     ${UNIT}
+    Sleep       2s
+
+Select Fund Type
+    [Arguments]     ${FUND_TYPE}       
+    Click    xpath=//*[@myid="app.fundAdd.SelectBox.fundType"]
+    Click    //div[contains(@class, 'dx-item-content') and text()='${FUND_TYPE}']
+    Sleep       2s
+Select Risk Level
+    [Arguments]     ${RISK_LEVEL}
+    Click    xpath=//*[@myid="app.fundAdd.SelectBox.riskLevel"]
+    Click    //div[contains(@class, 'dx-item-content') and text()='${RISK_LEVEL}']
+    Sleep       2s
+Select Transaction Type
+    [Arguments]         ${TRANSACTION_TYPE}
+    Click    xpath=//*[@myid="app.fundAdd.SelectBox.transactionType"]
+    Click    //div[contains(@class, 'dx-item-content') and text()='${TRANSACTION_TYPE}']
+    Sleep       2s
+
+
+
+
+
+
+*** Settings ***
+Library    Browser
+Resource    ../resource/Add new fund.robot
+Resource    ../resource/Init Browser.robot
+
+
+*** Test Cases ***
+Test Fund Insert
+    Open Browser To Fund Add Page
+    Insert Fund data    A20     QWERT111111      2       4
+    Select Fund Type    GOLD
+    Select Risk Level   2
+    Select Transaction Type     Subscription
+
+    Click       xpath=//*[@id="app.fundAdd.button.Submit"]/div/span
+    Sleep       5s
+
+
+*** Keywords ***
+Open Browser To Fund Add Page
+    Init Browser And Open Application
+    Click       xpath=//*[@id="app.dashboard.Button.addNewFund"]/div/span
+
+Select Fund Type
+    [Arguments]    ${fund_type}
+    Click    xpath=//*[@myid="app.fundAdd.SelectBox.fundType"]
+    Click    //div[contains(@class, 'dx-item-content') and text()='${fund_type}']
+
